@@ -14,17 +14,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-ContactListFetch-ContactListFetchTests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-ContactListFetch-ContactListFetchUITests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-ContactListFetch.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-ContactListFetchTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-ContactListFetchUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -42,22 +42,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>2D9BA6E9E5D8FFB6E307CCC21F7CA064</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2E34E1DF51A8EA31ED009AC8885BF789</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>39C69D9B6A709F788E7F5A5E2BDCF612</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>64AFE2F7F47AF470430CBCA0CE638ACA</key>
+		<key>63582F860F8142A7697F19D9D1C0F3D7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7A0657867D789DAC974A29BFA422901C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>80A34D0553D49D795388C4D7D768BFCB</key>
+		<key>6917289F559F27F1F2D21E0E3B77D082</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -67,12 +72,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B0EE612DA94A2068F3AEF07F57EE5C7E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>BD847913CF209E16C60C9C93B22038A8</key>
+		<key>A64FD59EA117F9B457DFE73489FF0095</key>
 		<dict>
 			<key>primary</key>
 			<true/>

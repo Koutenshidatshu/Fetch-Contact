@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_ContactListFetch_ContactListFetchUITestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_ContactListFetch_ContactListFetchUITestsVersionString[];
+FOUNDATION_EXPORT double Pods_ContactListFetchUITestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_ContactListFetchUITestsVersionString[];
 

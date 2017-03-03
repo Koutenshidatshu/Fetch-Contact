@@ -1,25 +1,27 @@
 //
-//  ViewController.swift
+//  MasterViewController.swift
 //  ContactListFetch
 //
-//  Created by Yonathan on 3/1/17.
+//  Created by Yonathan on 3/3/17.
 //  Copyright © 2017 Yonathan. All rights reserved.
 //
 
 import UIKit
+import Alamofire
 
-class ViewController: UIViewController {
+class MasterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.getDataContact()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
+    
+    private func getDataContact(){
 
-
+    }
 }
-

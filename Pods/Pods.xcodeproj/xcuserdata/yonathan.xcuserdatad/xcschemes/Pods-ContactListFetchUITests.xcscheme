@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7A0657867D789DAC974A29BFA422901C"
-               BuildableName = "Pods_ContactListFetch_ContactListFetchTests.framework"
-               BlueprintName = "Pods-ContactListFetch-ContactListFetchTests"
+               BlueprintIdentifier = "63582F860F8142A7697F19D9D1C0F3D7"
+               BuildableName = "Pods_ContactListFetchUITests.framework"
+               BlueprintName = "Pods-ContactListFetchUITests"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7A0657867D789DAC974A29BFA422901C"
-            BuildableName = "Pods_ContactListFetch_ContactListFetchTests.framework"
-            BlueprintName = "Pods-ContactListFetch-ContactListFetchTests"
+            BlueprintIdentifier = "63582F860F8142A7697F19D9D1C0F3D7"
+            BuildableName = "Pods_ContactListFetchUITests.framework"
+            BlueprintName = "Pods-ContactListFetchUITests"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
