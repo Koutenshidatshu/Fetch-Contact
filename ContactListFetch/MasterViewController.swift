@@ -18,6 +18,7 @@ class MasterViewController: UIViewController {
     var allContacts : [ContactData] = []
     
     override func viewDidLoad() {
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(MasterViewController.getDataContact), name: "Fetching", object: nil)
         super.viewDidLoad()
         self.activityIndicator.hidden = false
         self.getDataContact()
@@ -33,7 +34,7 @@ class MasterViewController: UIViewController {
         self.addressBookTable.rowHeight = UITableViewAutomaticDimension
     }
     
-    private func getDataContact(){
+    @objc private func getDataContact(){
        
         let header = [
             "key" : "Content-Type",
