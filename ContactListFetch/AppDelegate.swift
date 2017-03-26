@@ -7,22 +7,46 @@
 //
 
 import UIKit
+import Alamofire
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    let manager = NetworkReachabilityManager(host: "www.google.com")
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         self.window!.backgroundColor = UIColor.whiteColor()
         self.window!.rootViewController = MasterViewController()
         self.window!.makeKeyAndVisible()
+        self.networkReachability()
+
         return true
     }
-
+    func networkReachability(){
+        
+        manager?.listener = { status in
+            print("Network Status Changed: \(status)")
+            switch status {
+            case .NotReachable:
+                self.showAlertAppDelegate("Alert",message: "No Internet Connection",buttonTitle: "ok",window: self.window!);
+            case .Reachable(_), .Unknown:
+                self.showAlertAppDelegate("Alert",message: "Network Unknown",buttonTitle: "ok",window: self.window!);
+                NSNotificationCenter.defaultCenter().postNotification(NSNotification.init(name: "Fetching", object: nil))
+                //Hide error state
+            }
+        }
+        
+        manager?.startListening()
+    }
+    func showAlertAppDelegate(title : String,message : String,buttonTitle : String,window: UIWindow){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: buttonTitle, style: UIAlertActionStyle.Default, handler: nil))
+        window.rootViewController?.presentViewController(alert, animated: true, completion: nil)
+    }
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
