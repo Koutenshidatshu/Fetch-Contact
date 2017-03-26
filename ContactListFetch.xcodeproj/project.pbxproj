@@ -25,6 +25,7 @@
 		BA14D9331E883F75002E04D1 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA14D92F1E883F75002E04D1 /* TableViewCell.xib */; };
 		BA14D9341E883F75002E04D1 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA14D92F1E883F75002E04D1 /* TableViewCell.xib */; };
 		BA14D9351E883F75002E04D1 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA14D92F1E883F75002E04D1 /* TableViewCell.xib */; };
+		BA14D9371E885346002E04D1 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA14D9361E885346002E04D1 /* SDWebImage.framework */; };
 		BABC7E201E68B3D300B8F6E9 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA0DAA1A1E68B25100CE0B06 /* Alamofire.framework */; };
 		BABC7E221E68B3D800B8F6E9 /* Gloss.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BABC7E211E68B3D800B8F6E9 /* Gloss.framework */; };
 		BAC98B0A1E66E4AA000CB23F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC98B091E66E4A9000CB23F /* AppDelegate.swift */; };
@@ -92,6 +93,7 @@
 		BA0DAA1E1E68B25C00CE0B06 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/ContactListFetch-bnftgokimetaqyhavfskfyeadsfk/Build/Products/Debug-iphonesimulator/RxSwift/RxSwift.framework"; sourceTree = "<group>"; };
 		BA14D92E1E883F75002E04D1 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		BA14D92F1E883F75002E04D1 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		BA14D9361E885346002E04D1 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = "Pods/../build/Debug-iphoneos/SDWebImage/SDWebImage.framework"; sourceTree = "<group>"; };
 		BABC7E211E68B3D800B8F6E9 /* Gloss.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Gloss.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/ContactListFetch-bnftgokimetaqyhavfskfyeadsfk/Build/Products/Debug-iphonesimulator/Gloss/Gloss.framework"; sourceTree = "<group>"; };
 		BAC98B061E66E4A9000CB23F /* ContactListFetch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactListFetch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC98B091E66E4A9000CB23F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA14D9371E885346002E04D1 /* SDWebImage.framework in Frameworks */,
 				BABC7E221E68B3D800B8F6E9 /* Gloss.framework in Frameworks */,
 				BABC7E201E68B3D300B8F6E9 /* Alamofire.framework in Frameworks */,
 				C294AC5A70FA81145B341010 /* Pods_ContactListFetch.framework in Frameworks */,
@@ -148,6 +151,7 @@
 		11A8CFAC961394F0D4F57271 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BA14D9361E885346002E04D1 /* SDWebImage.framework */,
 				BABC7E211E68B3D800B8F6E9 /* Gloss.framework */,
 				BA0DAA1E1E68B25C00CE0B06 /* RxSwift.framework */,
 				BA0DAA1C1E68B25700CE0B06 /* RxCocoa.framework */,
@@ -722,6 +726,7 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/RxCocoa",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/RxSwift",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/SDWebImage",
 				);
 				INFOPLIST_FILE = ContactListFetch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -742,6 +747,7 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/RxCocoa",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/RxSwift",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/SDWebImage",
 				);
 				INFOPLIST_FILE = ContactListFetch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
