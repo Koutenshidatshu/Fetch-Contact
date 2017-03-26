@@ -11,8 +11,8 @@ import Alamofire
 import Gloss
 
 struct URL {
-
-    static let urlBaseApi = "http://gojek-contacts-app.herokuapp.com/contacts.json"
+    static let urlBaseApi = "http://gojek-contacts-app.herokuapp.com"
+    static let getContacts = "http://gojek-contacts-app.herokuapp.com/contacts.json"
     static let urlGetDetails = "http://gojek-contacts-app.herokuapp.com/contacts/"
     static var Manager : Alamofire.Manager = {
         

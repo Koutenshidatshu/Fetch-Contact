@@ -9,15 +9,17 @@
 import UIKit
 import Alamofire
 import Gloss
-class MasterViewController: UIViewController {
+import SDWebImage
 
+class MasterViewController: UIViewController {
+    @IBOutlet weak var activityIndicator: UIView!
     @IBOutlet var addressBookTable: UITableView!
-    
     
     var allContacts : [ContactData] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.activityIndicator.hidden = false
         self.getDataContact()
         self.setupAddressBook()
     }
@@ -38,13 +40,13 @@ class MasterViewController: UIViewController {
             "value" : "application/json"
         ]
         
-        let url = URL.urlBaseApi
+        let url = URL.getContacts
         Alamofire.request(.GET, url, parameters:nil, headers: header, encoding: .JSON).responseJSON {
             response in
             
             switch response.result {
             case .Success:
-    
+                self.activityIndicator.hidden = true
                 if let value = response.result.value as? [JSON] {
                     if (response.response?.statusCode == 200)
                     {
@@ -58,6 +60,7 @@ class MasterViewController: UIViewController {
                 }
                 break
             case .Failure(let error):
+                self.activityIndicator.hidden = true
 //                dPrint(error)
                 break
             }
@@ -82,8 +85,13 @@ extension MasterViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("TableViewCell")! as! TableViewCell
         let entry = allContacts[indexPath.row]
+        var urlImage : String = entry.profile_pic!
         let fullName : String! = entry.first_name! + " " + entry.last_name!
         cell.nameLabel.text = fullName
+        if urlImage.rangeOfString("missing.png") != nil{
+            urlImage = URL.urlBaseApi + urlImage
+        }
+        cell.imagePic.sd_setImageWithURL(NSURL.init(string: urlImage))
         
         //        cell.imagePic.image = setiimage
         //        if searchField.text == "" ||  searchField.text == " "{

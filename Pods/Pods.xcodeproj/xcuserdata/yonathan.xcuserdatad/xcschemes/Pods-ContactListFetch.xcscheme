@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2D9BA6E9E5D8FFB6E307CCC21F7CA064"
+               BlueprintIdentifier = "400EDA49F3E852650BC75CCEA57FCB2B"
                BuildableName = "Pods_ContactListFetch.framework"
                BlueprintName = "Pods-ContactListFetch"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2D9BA6E9E5D8FFB6E307CCC21F7CA064"
+            BlueprintIdentifier = "400EDA49F3E852650BC75CCEA57FCB2B"
             BuildableName = "Pods_ContactListFetch.framework"
             BlueprintName = "Pods-ContactListFetch"
             ReferencedContainer = "container:Pods.xcodeproj">

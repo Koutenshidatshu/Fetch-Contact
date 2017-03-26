@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MasterViewController" customModule="ContactListFetch" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="mZC-hd-dNb" id="d4u-TD-lYC"/>
                 <outlet property="addressBookTable" destination="aag-QK-HPe" id="5Rc-Mv-vXc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -46,6 +47,20 @@
                         <outlet property="delegate" destination="-1" id="go6-q9-Gvr"/>
                     </connections>
                 </tableView>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mZC-hd-dNb" userLabel="Activity Indicator">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="nch-bo-aK3">
+                            <rect key="frame" x="281" y="282" width="37" height="37"/>
+                            <color key="color" red="0.02352941222" green="0.7019608021" blue="0.72941178080000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="nch-bo-aK3" firstAttribute="centerX" secondItem="mZC-hd-dNb" secondAttribute="centerX" id="1Tw-uX-Y1f"/>
+                        <constraint firstItem="nch-bo-aK3" firstAttribute="centerY" secondItem="mZC-hd-dNb" secondAttribute="centerY" id="rub-CO-PYU"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -55,12 +70,18 @@
                 <constraint firstItem="iDH-yG-iPI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="844-72-yAR"/>
                 <constraint firstAttribute="trailing" secondItem="aag-QK-HPe" secondAttribute="trailing" id="BqF-LO-xdL"/>
                 <constraint firstItem="aag-QK-HPe" firstAttribute="top" secondItem="iDH-yG-iPI" secondAttribute="bottom" id="E4f-Nd-law"/>
+                <constraint firstItem="mZC-hd-dNb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="HpT-VO-Ppz"/>
                 <constraint firstAttribute="bottom" secondItem="iDH-yG-iPI" secondAttribute="bottom" constant="540" id="N6w-AR-SPN"/>
                 <constraint firstItem="iDH-yG-iPI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Okv-Sv-lj5"/>
                 <constraint firstItem="aag-QK-HPe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="TQv-0b-j7S"/>
+                <constraint firstAttribute="trailing" secondItem="mZC-hd-dNb" secondAttribute="trailing" id="XEo-mu-Rjo"/>
                 <constraint firstItem="aag-QK-HPe" firstAttribute="top" secondItem="iDH-yG-iPI" secondAttribute="top" id="dDb-Bk-C84"/>
                 <constraint firstAttribute="bottom" secondItem="aag-QK-HPe" secondAttribute="bottom" id="ebQ-eW-Qx1"/>
+                <constraint firstItem="mZC-hd-dNb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ib0-OT-V8n"/>
                 <constraint firstItem="aag-QK-HPe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kLx-uL-flh"/>
+                <constraint firstItem="mZC-hd-dNb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vRY-WC-YeU"/>
+                <constraint firstAttribute="bottom" secondItem="mZC-hd-dNb" secondAttribute="bottom" id="weh-o7-oqP"/>
+                <constraint firstItem="mZC-hd-dNb" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="x0A-d9-sLL"/>
             </constraints>
             <variation key="default">
                 <mask key="constraints">
